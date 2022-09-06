@@ -1,0 +1,906 @@
+ @charset "utf-8";
+ body {
+            margin: 0;
+        }
+
+        li:hover {
+            cursor: pointer;
+        }
+
+        table,
+        tr,
+        th,
+        td {
+            margin: 0;
+            padding: 0;
+        }
+
+        #sub {
+            width: 1260px;
+            height: 12400px;
+
+            margin: 0 auto;
+        }
+
+        /*서브메뉴*/
+        #sub>#submenu {
+            width: 1260px;
+            height: 100px;
+
+        }
+
+        #submenu>#subm {
+            width: 300px;
+            height: 70px;
+
+            float: right;
+            margin: 10px;
+        }
+
+        #subm>ul {
+            font-size: 12px;
+        }
+
+        #subm>ul>li {
+            float: left;
+            margin: 10px 0px 0px 18px;
+        }
+
+        #subm>ul>li>a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        #subm>ul>li>a:hover {
+            border-bottom: 1px solid #ddd;
+        }
+
+        /*서브컨텐츠*/
+        #sub>#contents {
+            width: 1260px;
+            height: 800px;
+
+        }
+
+        #contents>#probox1 {
+            width: 650px;
+            height: 800px;
+
+            float: left;
+        }
+
+
+
+        #contents>#probox1>.pbimg {
+            width: 140px;
+            height: 120px;
+            float: left;
+            margin: 0px 5px 0px 50px;
+        }
+
+
+        #pbbot {
+            width: 100%;
+            height: 100px;
+        }
+
+        #pbbot li {
+            float: left;
+            margin: 0 0px 0 10px;
+        }
+
+
+
+
+
+
+
+        #pbbot img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #contents>#probox1>.pbimg>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #probox1>img {
+            width: 100%;
+            height: 83%;
+            padding: 10px;
+        }
+
+        #contents>#probox2 {
+            width: 600px;
+            height: 800px;
+
+            float: right;
+        }
+
+        /*테이블*/
+        #probox2>#tablebox {
+            width: 500px;
+            height: 500px;
+
+            margin: 10px 0 0 0px;
+            display: inline-block;
+            font-size: 12px;
+            margin: 0 0 0 30px;
+        }
+
+        #tablebox td {
+            width: 500px;
+            height: 56px;
+        }
+
+        #tablebox th {
+            text-align: left;
+            width: 500px;
+            height: 56px;
+        }
+
+        #tablebox td>select {
+            width: 50px;
+        }
+
+        #tablebox td>.s4 {
+            margin: 0 0 0 40px;
+            color: #555;
+        }
+
+        #tablebox td>.s5 {
+            font-size: 20px;
+            padding: 0 0 0 40px;
+        }
+
+        #tablebox td>.s5:before {
+            content: "총 상품금액";
+            font-size: 11px;
+            color: #666;
+        }
+
+        #tablebox td>.s5:after {
+            content: "(1개)";
+            font-size: 11px;
+            color: #666;
+        }
+
+        #tablebox td>button {
+            width: 50px;
+            height: 20px;
+            margin: 0 0 0 10px;
+            background-color: #333;
+            color: #fff;
+        }
+
+
+        #tablebox tr:first-of-type {
+            font-size: 17px;
+        }
+
+        #tablebox tr:nth-of-type(5) {
+            color: #666;
+            font-size: 11px;
+        }
+
+        #tablebox tr:nth-of-type(6) {
+            color: #666;
+            font-size: 11px;
+        }
+
+        #tablebox tr:nth-of-type(7) {
+            border-bottom: 1px solid #ccc;
+            color: #666;
+            font-size: 11px;
+        }
+
+
+
+
+        #tablebox tr:nth-of-type(9) {
+            border-bottom: 1px solid #666;
+        }
+
+
+        /*구매란*/
+        #probox2>#buybox {
+            width: 600px;
+            height: 250px;
+
+        }
+
+        #buybox>button:first-child {
+            width: 300px;
+            padding: 10px;
+            border: 0;
+            background-color: #333;
+            color: #fff;
+            margin: 10px 0px 10px 30px;
+            font-size: 18px;
+        }
+
+        #buybox>button:first-child:hover {
+            background-color: black;
+            transition: all 0.5s;
+        }
+
+
+        #buybox>button:nth-child(2) {
+            width: 95px;
+            padding: 10px;
+            color: #333;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+
+        #buybox>button:nth-child(2):hover {
+            border: 1px solid black;
+        }
+
+        #buybox>button:nth-child(3) {
+            width: 95px;
+            padding: 10px;
+            color: #333;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+
+        #buybox>button:nth-child(3):hover {
+            border: 1px solid black;
+        }
+
+        #buybox>#box1 {
+            width: 300px;
+            height: 100px;
+
+            margin: 10px 10px 10px 30px;
+            border-top: 2px solid black;
+
+        }
+
+        #box1>#b1 {
+            width: 110px;
+            height: 50px;
+            float: left;
+            font-size: 11px;
+            float: left;
+            margin: 10px 0 0 0px;
+        }
+
+        #b1>.b1s1 {
+            color: rgb(25, 182, 25);
+        }
+
+
+        #box1>a>#b2 {
+            width: 130px;
+            height: 50px;
+            background-color: rgb(25, 182, 25);
+            float: left;
+            margin: 10px 5px 0 5px;
+        }
+
+        #b2>img {
+            width: 15px;
+            height: 15px;
+            margin: 15px 5px 10px 25px;
+            float: left;
+        }
+
+        #b2>span {
+            font-size: 12px;
+            color: #fff;
+            float: left;
+            margin: 15px 10px 10px 10px;
+        }
+
+        #box1>a>#b3 {
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            float: left;
+            text-align: center;
+            margin: 10px 0 0 0px;
+            border: 1px solid #ddd;
+        }
+
+        #b3>span {
+            font-size: 12px;
+            color: rgb(25, 182, 25);
+            margin: 15px 0 0 0px;
+            display: block;
+        }
+
+
+        /*상세이미지*/
+        #sub>#view {
+            width: 1260px;
+            height: 10800px;
+
+            border-top: 1px solid #ddd;
+
+        }
+
+        #view>#relbox {
+            width: 98%;
+            height: 300px;
+            margin: 30px auto;
+        }
+
+        #relbox>h2 {
+            text-align: center;
+        }
+
+        #relbox>h2:after {
+            content: "고객님들께서 함께 구매한 상품입니다.";
+            font-size: 14px;
+            color: #666;
+            display: block;
+        }
+
+        #relbox>.relboximg {
+            width: 210px;
+            height: 200px;
+            float: left;
+            margin: 40px 10px 10px 24px;
+            text-align: center;
+        }
+
+        .relboximg>a>img {
+            width: 100%;
+            height: 150px;
+            padding: 5px;
+        }
+
+        .relboximg>a>img:hover {
+            opacity: 0.9;
+            transition: all 0.5s;
+        }
+
+        #relbox>.relboximg>h5 {
+            font-size: 12px;
+            color: #333;
+            border-top: 1px solid #eee;
+            margin: 10px 0 0 0px;
+        }
+
+        #relbox>.relboximg>h6 {
+            font-size: 12px;
+        }
+
+        #promenu1 {
+            width: 98%;
+            height: 100px;
+            background-color: #fff;
+            margin: 10px auto;
+            position: relative;
+        }
+
+        #promenu1>ul {
+            font-size: 17px;
+            width: 100%;
+            height: 50px;
+            margin: 50px auto 0px;
+            position: absolute;
+        }
+
+        #promenu1>ul>li {
+            float: left;
+            width: 308px;
+            height: 100%;
+            padding: 10px 0 0 0px;
+            text-align: center;
+            background-color: #eee;
+            border: 1px solid #ddd;
+        }
+
+        #promenu1>ul>li:first-of-type {
+            border: 1px solid #000;
+            border-bottom: none;
+            background-color: #fff;
+        }
+
+        #promenu1>ul>li:not(:first-of-type) {
+            border-bottom: 1px solid #000;
+        }
+
+        #promenu1>ul>li>a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+        #view>#imgbox1 {
+            width: 80%;
+            height: 500px;
+            margin: 5px auto;
+        }
+
+        #imgbox1>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #view>#imgbox2 {
+            width: 98%;
+            height: 500px;
+            margin: 5px auto;
+            position: relative;
+        }
+
+        #imgbox2>#gifbox {
+            width: 300px;
+            height: 300px;
+            margin: 10px auto;
+            position: absolute;
+            left: 40%;
+            top: 20%;
+        }
+
+        #gifbox>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #view>#imgbox3 {
+            width: 70%;
+            height: 1056px;
+            margin: 0 auto;
+            background-color: gold;
+        }
+
+        #imgbox3>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #view>#ib3 {
+            width: 98%;
+            height: 220px;
+            margin: 80px auto 150px;
+            border-bottom: 1px solid #eee;
+        }
+
+        #view>#ib3>h1 {
+            margin: 0 0 0 185px;
+        }
+
+        #view>#ib3>table {
+            width: 70%;
+            height: 130px;
+            margin: 0 auto 10px;
+        }
+
+
+        #view>#ib3>table td {
+            width: 250px;
+            height: 45px;
+        }
+
+
+
+
+        #view>#imgbox4 {
+            width: 70%;
+            height: 1056px;
+            margin: 0 auto;
+            background-color: gold;
+        }
+
+        #imgbox4>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #view>#imgbox5 {
+            width: 70%;
+            height: 1056px;
+            margin: 0 auto;
+            background-color: gold;
+        }
+
+        #imgbox5>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #view>#imgbox6 {
+            width: 70%;
+            height: 1056px;
+            margin: 0 auto;
+            background-color: gold;
+        }
+
+        #imgbox6>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #ib6 {
+            width: 98%;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        #ib6 p {
+            font-size: 14px;
+            margin: 10px 0 0 170px;
+        }
+
+        #view>#imgbox7 {
+            width: 70%;
+            height: 1056px;
+            margin: 0 auto;
+            background-color: gold;
+        }
+
+        #imgbox7>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #view>#imgbox8 {
+            width: 70%;
+            height: 1590px;
+            margin: 30px auto;
+        }
+
+        #imgbox8>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #promenu2 {
+            width: 98%;
+            height: 100px;
+            background-color: #fff;
+            margin: 10px auto 0px;
+            position: relative;
+        }
+
+        #promenu2>ul {
+            font-size: 17px;
+            width: 100%;
+            height: 50px;
+            margin: 50px auto 0px;
+            position: absolute;
+        }
+
+        #promenu2>ul>li {
+            float: left;
+            width: 308px;
+            height: 100%;
+            padding: 10px 0 0 0px;
+            text-align: center;
+            background-color: #eee;
+            border: 1px solid #ddd;
+        }
+
+        #promenu2>ul>li:nth-of-type(2) {
+            border: 1px solid #000;
+            border-bottom: none;
+            background-color: #fff;
+        }
+
+        #promenu2>ul>li:not(:nth-of-type(2)) {
+            border-bottom: 1px solid #000;
+        }
+
+        #promenu2>ul>li>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #guide {
+            width: 98%;
+            height: 600px;
+            margin: 0 auto;
+            border-top: none;
+            position: relative;
+        }
+
+        #guide>h1 {
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        #guide>table {
+            width: 98%;
+            height: 500px;
+            text-align: left;
+            font-size: 13px;
+            margin: 0 auto;
+            position: absolute;
+        }
+
+        #guide>table span {
+            color: #666;
+        }
+
+        #promenu3 {
+            width: 98%;
+            height: 100px;
+            background-color: #fff;
+            margin: 10px auto 0px;
+            position: relative;
+        }
+
+        #promenu3>ul {
+            font-size: 17px;
+            width: 100%;
+            height: 50px;
+            margin: 50px auto 0px;
+            position: absolute;
+        }
+
+        #promenu3>ul>li {
+            float: left;
+            width: 308px;
+            height: 100%;
+            padding: 10px 0 0 0px;
+            text-align: center;
+            background-color: #eee;
+            border: 1px solid #ddd;
+        }
+
+        #promenu3>ul>li:nth-of-type(3) {
+            border: 1px solid #000;
+            border-bottom: none;
+            background-color: #fff;
+        }
+
+        #promenu3>ul>li:not(:nth-of-type(3)) {
+            border-bottom: 1px solid #000;
+        }
+
+        #promenu3>ul>li>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #after {
+            width: 98%;
+            height: 1000px;
+            margin: 0 auto;
+        }
+
+        #after>table {
+            width: 100%;
+            height: 500px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #after>table div {
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #ddd;
+            height: 100px;
+            text-align: left;
+        }
+
+        #after>table tr:first-of-type {
+            border-top: 1px solid #aaa;
+            border-bottom: 1px solid #aaa;
+        }
+
+        #after>table th {
+            text-align: center;
+            font-size: 12px;
+            height: 60px;
+        }
+
+
+        #after>table td {
+            font-size: 12px;
+        }
+
+        #after>table td:first-of-type {
+            width: 50px;
+        }
+
+        #after>table td:nth-of-type(2) {
+            width: 900px;
+            text-align: left;
+            padding: 0 0 0 10px;
+        }
+
+        #after>table td:nth-of-type(2)>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #after>table td:nth-of-type(3) {
+            width: 80px;
+        }
+
+        #after>table td:nth-of-type(4) {
+            width: 100px;
+        }
+
+
+
+
+        #after>table span {
+            display: block;
+            margin: 20px 0 0 10px;
+        }
+
+        #after>table p {
+            color: #666;
+            margin: 0px 0 0 10px;
+        }
+
+        #after>button {
+            float: right;
+            padding: 5px;
+            width: 150px;
+            margin: 10px;
+        }
+
+        #after>button:hover {
+            opacity: 0.9;
+            transition: all 0.5s;
+        }
+
+        #after>button:nth-of-type(2) {
+            background-color: #333;
+            color: #fff;
+            border: 0;
+        }
+
+        #after>button:first-of-type {
+            background-color: #fff;
+            color: rgb(3, 66, 66);
+            border: 1px solid #eee;
+        }
+
+
+        #promenu4 {
+            width: 98%;
+            height: 100px;
+            background-color: #fff;
+            margin: 10px auto 0px;
+            position: relative;
+        }
+
+        #promenu4>ul {
+            font-size: 17px;
+            width: 100%;
+            height: 50px;
+            margin: 50px auto 0px;
+            position: absolute;
+        }
+
+        #promenu4>ul>li {
+            float: left;
+            width: 308px;
+            height: 100%;
+            padding: 10px 0 0 0px;
+            text-align: center;
+            background-color: #eee;
+            border: 1px solid #ddd;
+        }
+
+        #promenu4>ul>li:nth-of-type(4) {
+            border: 1px solid #000;
+            border-bottom: none;
+            background-color: #fff;
+        }
+
+        #promenu4>ul>li:not(:nth-of-type(4)) {
+            border-bottom: 1px solid #000;
+        }
+
+        #promenu4>ul>li>a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+
+        #proask {
+            width: 98%;
+            height: 700px;
+            margin: 0 auto;
+        }
+
+        #proask>table {
+            width: 100%;
+            height: 500px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #proask>table div {
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #ddd;
+            height: 100px;
+            text-align: left;
+        }
+
+        #proask>table tr:first-of-type {
+            border-top: 1px solid #aaa;
+            border-bottom: 1px solid #aaa;
+        }
+
+        #proask>table th {
+            text-align: center;
+            font-size: 12px;
+            height: 60px;
+        }
+
+        #proask tr {
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            height: 50px;
+        }
+
+        #proask>table td {
+            font-size: 12px;
+        }
+
+        #proask>table td:first-of-type {
+            width: 140px;
+        }
+
+        #proask>table td:nth-of-type(2) {
+            width: 900px;
+            text-align: center;
+            ;
+            padding: 0 0 0 10px;
+        }
+
+        #proask>table td:nth-of-type(2)>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #proask>table td:nth-of-type(3) {
+            width: 80px;
+        }
+
+        #proask>table td:nth-of-type(4) {
+            width: 100px;
+        }
+
+        #proask>table td:nth-of-type(5) {
+            width: 80px;
+        }
+
+
+
+
+        #proask>table span {
+            display: block;
+            margin: 20px 0 0 10px;
+        }
+
+        #proask>table p {
+            color: #666;
+            margin: 0px 0 0 10px;
+        }
+
+        #proask>button {
+            float: right;
+            padding: 5px;
+            width: 150px;
+            margin: 10px;
+        }
+
+        #proask>button:hover {
+            opacity: 0.9;
+            transition: all 0.5s;
+        }
+
+        #proask>button:nth-of-type(2) {
+            background-color: #333;
+            color: #fff;
+            border: 0;
+        }
+
+        #proask>button:first-of-type {
+            background-color: #fff;
+            color: rgb(3, 66, 66);
+            border: 1px solid #eee;
+        }
